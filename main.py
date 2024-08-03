@@ -13,7 +13,7 @@ FONT = ("Arial", 12,"bold ")
 
 #Encryption Part
 def generate_key(password):
-    # Sabit bir salt kullanın
+    # Sabit bir salt
     salt = b'some_salt'
     kdf = PBKDF2HMAC(
         algorithm=hashes.SHA256(),
@@ -70,11 +70,6 @@ window.geometry("600x900")
 #window.config(bg="white")
 
 #window.configure(bg="light blue")
-
-#FUNCTIONS
-
-
-
 #Photo
 
 image_path = "C:\\Users\\enese\\Downloads\\top_secret.png"
